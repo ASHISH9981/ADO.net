@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="TestDb" Class="DatabaseclassDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=VDL51\SQLEXPRESS;Initial Catalog=TestDb;Integrated Security=False;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="TestDbConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Employee" Member="Employees">
+    <Type Name="Employee">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EName" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Salary" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Testing" Member="Testings">
+    <Type Name="Testing">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="EmailId" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Addresscheck" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="PassWordFist" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="PassWordConfirm" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="PinCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
